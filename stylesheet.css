@@ -1,3 +1,4 @@
+/* Correciones */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +8,11 @@
 body {
     background-color: rgb(226, 226, 17);
     font-family: sans-serif;
+    padding: 60px;
+
 }
 
-img {
+.logo-home  {
     width: 50px;
 }
 
@@ -18,6 +21,62 @@ img {
     padding: 8px;
     margin-top: -25px;
     }
+
+/* Home General */
+.home {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+
+div > h1 {
+    display: inline;
+    text-align: right; 
+}
+
+.novedades {  
+    margin: 25px;
+    display: block;
+    width: 300px;
+    background-color: aquamarine;
+}
+
+
+/* Grilla de Productos Home */
+
+.productos {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 10px;
+    padding: 10px;
+    background-color: blue;
+}
+
+.sales {
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+    display: block;
+}
+
+
+.novedades-imagen {
+    box-sizing: content-box;
+    display: block;
+    max-width: 200px;
+    padding: 5px;
+    height: 200px;
+}
+
+
+
+.form {
+    background-color: antiquewhite;
+}
+
+/* Nav */
 
 .nav-ul {
     max-width: 1000px;
@@ -28,6 +87,7 @@ img {
 }
 
 .nav-li {
+    width: 300px; 
     flex-grow: 1;
 }
 
@@ -39,6 +99,7 @@ img {
     text-align: center;
     text-decoration: none;
 }
+
 
 .nav-a:hover {
     color: black;
@@ -54,7 +115,7 @@ img {
 
 }
 
-
+/* Responsive*/
 @media (max-width: 767px) {
     .boton {
         padding: 8px;
@@ -63,6 +124,24 @@ img {
 
     .imagen {
         display: none;
+    }
+
+    .novedades {
+        width: 90%;
+        display: inline-block;
+    }
+
+    .home {
+        text-align: center;
+        display: block;
+    }
+
+
+    .productos {
+
+        justify-content: center;
+        display: block;
+        width: 90%;
     }
 
     .nav-ul {
@@ -75,6 +154,31 @@ img {
     }
 }
 
+/* Footer */
+footer {
+    padding: 20px; 
+    margin-top: 30px;
+    justify-content: space-between;    
+    background-color: #ddd;
+  }
+
+  footer > ul li {
+      padding: 10px;
+      display: inline;
+
+  }
+
+  footer > p {
+      text-align: right;
+  }
+
+  footer > ul li a  {
+      color: black;
+      text-decoration: none;
+  }
+
+
+/* Acciones con Java*/
 .mostrar {
     display: block;
 }
