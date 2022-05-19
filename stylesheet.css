@@ -12,28 +12,30 @@ body {
 
 }
 
-.logo-home  {
-    width: 50px;
-}
-
 .imagen {
     display: block;
     padding: 8px;
     margin-top: -25px;
-    }
+    }   
+
+
+.logo-home  {
+    width: 50px;
+}
+
 
 /* Home General */
+
 .home {
     margin-top: 10px;
     display: flex;
-    justify-content: space-around;
     background-color: aqua;
 }
 
 
-div > h1 {
-    display: inline;
-    text-align: right; 
+.buscador-gral {
+    display: flex;
+    justify-content: center;
 }
 
 .novedades {  
@@ -49,32 +51,30 @@ div > h1 {
 .productos {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    margin: 10px;
-    padding: 10px;
+    margin: 25px;
     background-color: blue;
+    justify-content: center;
 }
 
 .sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-productos {
+    display: flex;
     margin: 10px;
     border: 2px solid black;
-    text-align: center;
-    display: block;
-}
-
-
-.novedades-imagen {
-    box-sizing: content-box;
-    display: block;
-    max-width: 200px;
-    padding: 5px;
     height: 200px;
+    
 }
 
-
-
-.form {
-    background-color: antiquewhite;
+button {
+    width: 20px;
+    display: block;
+    
 }
+
 
 /* Nav */
 
