@@ -4,9 +4,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas</title>
+    <title>Tajun Gapul</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <!-- Barra de Navegacion Responsive -->
+    <input type="image" id="boton" alt="Menu"
+       src="Imagenes/tajungapullogo.PNG" class="boton">
     
+    <!-- Barra de Navegacion -->
+    <nav class="nav">
+        <ul class="nav-ul" id="nav">
+            <li class="nav-li">
+                <a href="carrito.html" class="nav-a">Carrito</a>
+            </li>
+            <li class="nav-li">
+                <a href="productos.html" class="nav-a">Productos</a>
+            </li>
+            <a href="index.html" class="imagen">
+                <img src="Imagenes/tajungapullogo.PNG" class="logo-home" alt="Logo de Tajungapul"></a>
+            <li class="nav-li">
+                <a href="preguntas.html" class="nav-a">Preguntas</a>
+            </li>
+            <li class="nav-li">
+                <a href="contacto.html" class="nav-a">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="buscador-gral">
+        <form>
+            <p>
+                ¿Que es de tu interes?
+                <input type="search" name="busqueda" 
+                placeholder="Balanceado, Jueguetes, Piedras, Etc.">
+                <input type="submit" value="Buscar">
+            </p>
+        </form>
+    </div>
+
+    <!-- Formulario -->
+<div class="contain-form-quest">
+    
+    <div class="contain-quest">
+
+        <div class="contain-busc">
+            <form>
+            <h2>¿Que duda tienes?</h2>
+                <input type="search" class="busc" name="buscadudas" list="sugerencias">
+                <br>
+                <input type="submit" value="Buscar">
+            </form>
+              <datalist id="sugerencias">
+                <option value="Perritos">
+                <option value="Gatitos">
+                <option value="¿Como Comprar?">
+                <option value="Otros">
+              </datalist>
+        </div>
+        <br>
+    <div class="title-quest">
+            <h3>LAS MAS BUSCADAS</h3>
+        </div>
+        <br>
+    <div class="quest">
+            <h1 class="text-quest">¿Lorem ipsum dolor sit amet consectetur?</h1>
+            <h4 class="descrip-quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quis ratione explicabo deserunt. 
+                Veritatis quis sapiente in necessitatibus deleniti unde officia atque nulla magnam 
+                quisquam deserunt odio, quos, eligendi quaerat!</h4>
+        </div>
+    <div class="quest">
+            <h1 class="text-quest">¿Lorem ipsum dolor sit amet consectetur?</h1>
+            <h4 class="descrip-quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quis ratione explicabo deserunt. 
+                Veritatis quis sapiente in necessitatibus deleniti unde officia atque nulla magnam 
+                quisquam deserunt odio, quos, eligendi quaerat!</h4>
+        </div>
+    <div class="quest">
+            <h1 class="text-quest">¿Lorem ipsum dolor sit amet consectetur?</h1>
+            <h4 class="descrip-quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quis ratione explicabo deserunt. 
+                Veritatis quis sapiente in necessitatibus deleniti unde officia atque nulla magnam 
+                quisquam deserunt odio, quos, eligendi quaerat!</h4>
+        </div>
+    <div class="quest">
+            <h1 class="text-quest">¿Lorem ipsum dolor sit amet consectetur?</h1>
+            <h4 class="descrip-quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quis ratione explicabo deserunt. 
+                Veritatis quis sapiente in necessitatibus deleniti unde officia atque nulla magnam 
+                quisquam deserunt odio, quos, eligendi quaerat!</h4>
+        </div>
+    <div class="quest">
+            <h1 class="text-quest">¿Lorem ipsum dolor sit amet consectetur?</h1>
+            <h4 class="descrip-quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quis ratione explicabo deserunt. 
+                Veritatis quis sapiente in necessitatibus deleniti unde officia atque nulla magnam 
+                quisquam deserunt odio, quos, eligendi quaerat!</h4>
+        </div>
+
+        <div class="pags">
+            <ul class="paginas">
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+    </div>
+   
+    <div class="contain-form">
+
+        <div class="contain-form-title">
+            <h2>Aqui puedes hacer tu consulta</h2>
+        </div>
+
+    <form class="form-form" >
+        <div class="form-grupo">
+          <label for="name">Nombre
+          <input
+            type="text"
+            name="nombre"
+            class="form-control"
+            placeholder="Nombre Completo"
+            required/></label>
+        </div>
+        <div class="form-grupo">
+          <label for="email">Email
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Ponga aqui su mail"
+            required/></label>
+        </div>
+        <div class="form-grupo">
+        <label for="tel">Telefono:
+        <input
+            type="tel"
+            name="telefono"
+            class="form-control"
+            placeholder="(Codigo de Area)+Numero"
+            required/></label>
+        </div>
+
+        <div class="form-grupo">
+          <p>¿Por que motivo desea hacer una pregunta o aclaracion?</p>
+          <br>
+          <select name="selector" class="form-control" required>
+            <option disabled selected value>Esta relacionado con:</option>
+            <option value="atencion">La Atencion al Cliente</option>
+            <option value="producto">Un Producto</option>
+            <option value="pagina">La Pagina Web</option>
+            <option value="nolodigo">Prefierio no decirlo</option>
+            <option value="otro">Otro Motivo</option>
+          </select>
+        </div>
+
+        <div class="form-grupo">
+          <p>¿Como calificarias nuestra pagina?</p>
+          <br>
+          <label><input
+              name="calificacion"
+              value="manco"
+              type="radio"
+              class="input-radio"/>Mmmmmhh...le falta</label>
+          <label><input
+              name="calificacion"
+              value="bien"
+              type="radio"
+              class="input-radio"/>Va queriendo</label>
+          <label><input
+              name="calificacion"
+              value="rre bien"
+              type="radio"
+              class="input-radio"
+              checked/>Ultimos retoques y ya la quiero Online</label>
+        </div>
+    
+        
+        
+        <div class="form-grupo">
+          <p>Aqui podras dejar la pregunta o aclaracion que quieras hacer:</p>
+          <br>
+          <textarea
+            class="input-text"
+            name="pregunta o comentario"
+            placeholder="Hazme la pregunta aqui o si deseas realizar una aclaracion"
+          ></textarea>
+        </div>
+
+        <div class="form-grupo">
+          <label>
+            <input
+              name="spam"
+              value="spam"
+              type="checkbox"
+              class="input-checkbox"
+            />¿Desea recibir novedades o descuentos?
+          </label>
+        </div>
+
+        <div class="form-grupo">
+          <button type="submit" class="submit-button">
+            Enviar
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+</div>
+
 </body>
+
+<footer>
+    <ul>
+      <li><a href="#">Preguntas</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Contactanos</a></li>
+    </ul>
+    <p>Creada en 2022</p>
+</footer>
+
+
 </html>
