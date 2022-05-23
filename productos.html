@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tajun Gapul</title>
     <link rel="stylesheet" href="stylesheet.css">
+    
+    <!-- FUENTES IMPORTADAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <!-- Barra de Navegacion Responsive -->
@@ -31,6 +38,9 @@
             </li>
         </ul>
     </nav>
+
+<!-- Buscador General de la Pagina -->
+
     <div class="buscador-gral">
         <form action="" target="_blank">
             <p>
@@ -41,137 +51,165 @@
         </form>
     </div>
 
-    <div class="home">
-        <div class="novedades">
+<!-- Contenedor de las Cajas Principales -->
+
+<div class="produc-home">
+    <div class="novedades">
+        <div class="buscador-produc">
+            <form action="" target="_blank">
+                    <h2 class="secciones">¿Que producto busca?</h2>
+                    <p>(Recuerde ser especifico con las palabras a utilizar)</p>
+                    <br>
+                    <input type="search" class="busc" name="busqueda" placeholder="Pelota, Pipetas, Etc.">
+                    <br>
+                    <input type="submit" class="button-produc" value="Buscar">
+            </form>
+        </div>
             <br>
-            <h1>Secciones</h1>
-        <ul class="aside-ul">
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Balanceado de Mascotas</a>
+            <h1 class="secciones">Secciones</h1>
+        <ul class="aside-ul ">
+            <li class="aside-li-top">
+                <a href="index.html" class="aside-a-top">Alimento para Mascotas</a>
+                <ul>
+                    <li><a class="aside-a-sub1" href="index.html">Gatos</a></li>
+                    <li><a class="aside-a-sub2" href="index.html">Perros</a></li>
+                </ul>
             </li>
             <li class="aside-li">
                 <a href="index.html" class="aside-a">Juguetes</a>
+                <ul>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                </ul>
             </li>
             <li class="aside-li">
-                <a href="index.html" class="aside-a">Insecticidas</a>
+                <a href="index.html" class="aside-a">Juguetes</a>
+                <ul>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                    <li><a class="aside-a-sub1" href="">Gatunos</a></li>
+                    <li><a class="aside-a-sub2" href="">Perrunos</a></li>
+                </ul>
             </li>
             <li class="aside-li">
-                <a href="index.html" class="aside-a">Articulos de Limpieza</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Articulos Sueltos de Limpieza</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Colchonetas para Mascotas</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Polares para Perro</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Pipetas para Mascotas</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Semillas</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Macetas</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Macetas</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Macetas</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Macetas</a>
-            </li>
-            <li class="aside-li">
-                <a href="index.html" class="aside-a">Otros</a>
+                <a href="index.html" class="aside-a-bottom">Otros</a>
             </li>
         </ul>
-        
-        </div>
+    </div>
 
-    <div id="main-tb">
+<!-- Tabla de Productos -->
+
+<div class="main-tb">
         <div class="container-produc">
             <table>
                 <thead>
                     <tr>
                         <th>Imagen</th>
-                        <th class="desc-tb">Descripcion</th>
+                        <th class="th-descrip">Descripcion</th>
                         <th>Precio</th>
                         <th>Cantidad</th>
                         <th>Pedilo</th>
+                        <th>Codigo</th>
                     </tr>
                 </thead>
-                <tr>
+                <tr class="tr-color-b">
                     <td><img src="Imagenes/Alimentos/Criadores Adulto.JPG"
                              alt="Criadores Adulto" class="img-produc"></td>
-                    <td>Criadores Adulto 22kg</td>
-                    <td>$1998</td>
-                    <td><input type="number" id="contador" name="Cantidad"
-                               min="1" max="10"></td>
-                    <td><button>+</button></td>
+                    <td class="td-font">Criadores Adulto 22kg</td>
+                    <td class="td-font">$1998</td>
+                    <td><div><input type="number" id="contador" name="Cantidad"
+                               min="1" max="10"></div></td>
+                    <td class="td-button"><a href="#"><span class="material-symbols-outlined">
+                                add_circle
+                                </span></a></td>
+                    <td class="td-font">01002</td>
                 </tr>
-                <tr>
+                <tr class="tr-color-a">
                     <td><img src="Imagenes/Alimentos/Criadores Adulto.JPG"
                              alt="Criadores Adulto" class="img-produc"></td>
-                    <td>Criadores Adulto 22kg</td>
-                    <td>$1998</td>
+                    <td class="td-font">Criadores Adulto 22kg</td>
+                    <td class="td-font">$1998</td>
                     <td><input type="number" id="contador" name="Cantidad"
                                min="1" max="10"></td>
-                    <td><button>+</button></td>
+                    <td class="td-button"><a href="#"><span class="material-symbols-outlined">
+                        add_circle
+                        </span></a></td>
+                    <td class="td-font">01002</td>
                 </tr>
-                <tr>
+                <tr class="tr-color-b">
                     <td><img src="Imagenes/Alimentos/Criadores Adulto.JPG"
                              alt="Criadores Adulto" class="img-produc"></td>
-                    <td>Criadores Adulto 22kg</td>
-                    <td>$1998</td>
-                    <td><input type="number" id="contador" name="Cantidad"
-                               min="1" max="10"></td>
-                    <td><button>+</button></td>
+                    <td class="td-font">Criadores Adulto 22kg</td>
+                    <td class="td-font">$1998</td>
+                    <td><div><input type="number" id="contador" name="Cantidad"
+                               min="1" max="10"></div></td>
+                    <td class="td-button"><a href="#"><span class="material-symbols-outlined">
+                                add_circle
+                                </span></a></td>
+                    <td class="td-font">01002</td>
                 </tr>
-                <tr>
+                <tr class="tr-color-a">
                     <td><img src="Imagenes/Alimentos/Criadores Adulto.JPG"
                              alt="Criadores Adulto" class="img-produc"></td>
-                    <td>Criadores Adulto 22kg</td>
-                    <td>$1998</td>
+                    <td class="td-font">Criadores Adulto 22kg</td>
+                    <td class="td-font">$1998</td>
                     <td><input type="number" id="contador" name="Cantidad"
                                min="1" max="10"></td>
-                    <td><button>+</button></td>
+                    <td class="td-button"><a href="#"><span class="material-symbols-outlined">
+                                add_circle
+                                </span></a></td>
+                    <td class="td-font">01002</td>
                 </tr>
-                <tr>
+                <tr class="tr-color-b">
                     <td><img src="Imagenes/Alimentos/Criadores Adulto.JPG"
                              alt="Criadores Adulto" class="img-produc"></td>
-                    <td>Criadores Adulto 22kg</td>
-                    <td>$1998</td>
-                    <td><input type="number" id="contador" name="Cantidad"
-                               min="1" max="10"></td>
-                    <td><button>+</button></td>
+                    <td class="td-font">Criadores Adulto 22kg</td>
+                    <td class="td-font">$1998</td>
+                    <td><div><input type="number" id="contador" name="Cantidad"
+                               min="1" max="10"></div></td>
+                    <td class="td-button"><a href="#"><span class="material-symbols-outlined">
+                                add_circle
+                                </span></a></td>
+                    <td class="td-font">01002</td>
                 </tr>
-                <tr>
+                <tr class="tr-color-a">
                     <td><img src="Imagenes/Alimentos/Criadores Adulto.JPG"
                              alt="Criadores Adulto" class="img-produc"></td>
-                    <td>Criadores Adulto 22kg</td>
-                    <td>$1998</td>
+                    <td class="td-font">Criadores Adulto 22kg</td>
+                    <td class="td-font">$1998</td>
                     <td><input type="number" id="contador" name="Cantidad"
                                min="1" max="10"></td>
-                    <td><button>+</button></td>
+                    <td class="td-button"><a href="#"><span class="material-symbols-outlined">
+                                add_circle
+                                </span></a></td>
+                    <td class="td-font">01002</td>
                 </tr>
             </table>
         </div>
 
-            <div class="pags-produc">
+        <div class="pags-produc">
                 <ul class="pags-produc-ul">
-                    <li><a href="#">«</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">»</a></li>
+                    <li><a class="pag-anima" href="#">«</a></li>
+                    <li><a class="pag-anima" href="#">1</a></li>
+                    <li><a class="pag-anima" href="#">2</a></li>
+                    <li><a class="pag-anima" href="#">3</a></li>
+                    <li><a class="pag-anima" href="#">4</a></li>
+                    <li><a class="pag-anima" href="#">5</a></li>
+                    <li><a class="pag-anima" href="#">6</a></li>
+                    <li><a class="pag-anima" href="#">7</a></li>
+                    <li><a class="pag-anima" href="#">»</a></li>
                 </ul>
             </div>
         </div>
